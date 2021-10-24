@@ -1,5 +1,5 @@
 localStorage.setItem("Учёба","+");
-setCookie('Учёба','Таблица',12);
+setCookie('Учёба','',12);
 
 function setCookie(name, value, days){
 	var date = new Date;
