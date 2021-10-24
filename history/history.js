@@ -11,7 +11,7 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
 }
 
 let tr2 = document.createElement('tr');
-tr2.innerHTML = getCookie("name");
+tr2.innerHTML = getCookie("Тест");
 cookieStore.append(tr2);
 
 function getCookie(name){
