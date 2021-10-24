@@ -11,14 +11,17 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
 }
 
 
+
+/*
+
+allCookies{
 	for (let cookie of cookiesArray) {
 		let tr2 = document.createElement('tr');
 		tr2.innerHTML = cookie.values;
 		cookieStore.append(tr2);
 	}
+}
 
-
-/*
 
 setCookie('name','+',12);
 
