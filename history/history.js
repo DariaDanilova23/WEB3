@@ -10,7 +10,14 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
     storage.append(tr);
 }
 
-document.cookie='name=Daria';
+function allCookie(){
+	let cookiesArray = document.cookie.split(';');
+	for (let cookie of cookiesArray) {
+		let tr2 = document.createElement('tr');
+		tr2.innerHTML = cookie;
+		cookieStore.append(tr2);
+}
+}
 
 /*
 setCookie('name','+',12);
