@@ -2,8 +2,9 @@ localStorage.setItem("Тест","+");
 
 setCookie('Тест','+',12);
 
-function setCookie(name, value, days){
+function setCookie(name_s, value, days){
 	var date = new Date;
+	var name=name_s;
 	date.setDate(date.getDate()+days);
 	value=encodeURIComponent(value);
 	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
