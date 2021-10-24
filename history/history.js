@@ -12,7 +12,7 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
 	let cookiesArray = document.cookie.split(';');
 	for (let cookie of cookiesArray) {
 		let tr2 = document.createElement('tr');
-		tr2.innerHTML = cookie;
+		tr2.innerHTML = encodeURIComponent(cookie);
 		cookieStore.append(tr2);
 	}
 
