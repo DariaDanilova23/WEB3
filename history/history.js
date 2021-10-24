@@ -1,6 +1,5 @@
 let storage = document.querySelector('tbody.LS');
 let cookieStore = document.querySelector('tbody.Cookie');
-let cookiesArray = document.cookie.split(';');
 for(let key in localStorage) {
    if (!localStorage.hasOwnProperty(key)) {
         continue;
@@ -12,9 +11,10 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
 
 allCookies();
 allCookies{
+	let cookiesArray = document.cookie.split(';');
 	for (let cookie of cookiesArray) {
 		let tr2 = document.createElement('tr');
-		tr2.innerHTML = cookie;
+		tr2.innerHTML = cookie.values;
 		cookieStore.append(tr2);
 	}
 }
