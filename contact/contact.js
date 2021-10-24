@@ -1,4 +1,12 @@
 localStorage.setItem("Контакт","+");
+
+setCookie('Контакт','Конт',12);
+
+function setCookie(name, value, days){
+	var date = new Date;
+	date.setDate(date.getDate()+days);
+	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
+};
 function checkParams(){
 	var cnt = 0, startpos=0;
 	var check1,check2,check3=0;
