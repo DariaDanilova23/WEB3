@@ -1,9 +1,12 @@
-/*const element=document.getElementsByClassName('wall');
- for(i=0;i<element.length;i++){
-	 element[i].addEventListener('click',showPic);
- }*/
- 
 localStorage.setItem("Фотоальбом", "+");
+setCookie('Фотоальбом','Фото',12);
+
+function setCookie(name, value, days){
+	var date = new Date;
+	date.setDate(date.getDate()+days);
+	value=encodeURIComponent(value);
+	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
+};
 
 function showPic(pic){
 let div = document.createElement('div');
