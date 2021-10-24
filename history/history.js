@@ -7,17 +7,14 @@ for(let key in localStorage) {
     let tr = document.createElement('tr');
 tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
     storage.append(tr);
-}
+};
 
-allCookies();
-allCookies{
 	let cookiesArray = document.cookie.split(';');
 	for (let cookie of cookiesArray) {
 		let tr2 = document.createElement('tr');
 		tr2.innerHTML = cookie.name;
 		cookieStore.append(tr2);
 	}
-}
 
 /*
 
