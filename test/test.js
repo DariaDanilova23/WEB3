@@ -8,7 +8,7 @@ function setCookie(name_s, value_s, days){
 	var value=value_s;
 	date.setDate(date.getDate()+days);
 	value=encodeURIComponent(value);
-	document.cookie=name+";"+value+";path=/; expires="+date.toUTCString();
+	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
 };
 
 function validate_form()
