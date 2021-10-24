@@ -1,6 +1,6 @@
  localStorage.setItem("Хобби","+");
 
-setCookie('МОИ ИНТЕРЕСЫ','Хобби',12);
+setCookie('МОИ ИНТЕРЕСЫ','интересы',12);
 
 function setCookie(name_s, value_s, days){
 	var date = new Date;
