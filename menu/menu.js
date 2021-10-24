@@ -1,4 +1,12 @@
 localStorage.setItem("Главная","+");
+setCookie('Главная','Глав',12);
+
+function setCookie(name, value, days){
+	var date = new Date;
+	date.setDate(date.getDate()+days);
+	value=encodeURIComponent(value);
+	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
+};
 function zero(value)
     {
         if (value < 10)
