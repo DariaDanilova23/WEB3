@@ -1,5 +1,5 @@
 localStorage.setItem("Главная","+");
-setCookie('Главная','Глав',12);
+setCookie('Главная','',12);
 
 function setCookie(name, value, days){
 	var date = new Date;
