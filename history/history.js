@@ -13,7 +13,6 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
 allCookie();
 
 function allCookie(){
-	let cookiesArray = document.cookie.split(';');
 	for (let cookie of cookiesArray) {
 		let tr2 = document.createElement('tr');
 		tr2.innerHTML = cookie;
