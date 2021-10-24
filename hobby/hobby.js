@@ -1,11 +1,13 @@
  localStorage.setItem("Хобби","+");
 
-setCookie('Мои интересы','Мои интересы',12);
+setCookie('Мои интересы','интересы',12);
 
 function setCookie(name, value, days){
 	var date = new Date;
 	date.setDate(date.getDate()+days);
 	value=encodeURIComponent(value);
+	name=encodeURIComponent(name);
+	
 	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
 };
 
@@ -30,12 +32,3 @@ function setCookie(name, value, days){
 		 this.children[1].style.overflow='hidden';
 	 }
  }
- 
-/*setCookie("Мои интересы", "1", 21);
- //document.cookie="Мои интересы; epires=Thu, 21 oct 2021 13:00:00 UTC; path=/";
-function setCookie(name, value, days){
-	var date = new Date;
-	date.setDate(date.getDate()+days);
-	value=encodeURIComponent(value);
-	document.cookie=name+"="+value+";path=/; expires"+date.toUTCString();
-};*/
