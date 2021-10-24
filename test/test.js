@@ -2,11 +2,13 @@ localStorage.setItem("Тест","+");
 
 setCookie('name','Тест',12);
 
-function setCookie(name, value, days){
+function setCookie(name_s, value_s, days){
 	var date = new Date;
+	var name=name_s;
+	var value=value_s;
 	date.setDate(date.getDate()+days);
 	value=encodeURIComponent(value);
-	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
+	document.cookie= encodeURIComponent(name)+"="+ encodeURIComponent(value)+";path=/; expires="+date.toUTCString();
 };
 
 function validate_form()
