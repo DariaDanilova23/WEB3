@@ -1,6 +1,6 @@
 localStorage.setItem("Контакт","+");
 
-setCookie('Контакт','Конт',12);
+setCookie('Контакт','',12);
 
 function setCookie(name, value, days){
 	var date = new Date;
