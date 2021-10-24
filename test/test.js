@@ -1,6 +1,6 @@
 localStorage.setItem("Тест","+");
 
-setCookie('Тест','Тест_t',12);
+setCookie('Тест','',12);
 
 function setCookie(name, value, days){
 	var date = new Date;
