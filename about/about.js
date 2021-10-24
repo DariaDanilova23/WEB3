@@ -1,6 +1,6 @@
 localStorage.setItem("Обо мне","+");
 
-setCookie('Обо мне','я',12);
+setCookie('Обо мне','Я',12);
 
 function setCookie(name, value, days){
 	var date = new Date;
