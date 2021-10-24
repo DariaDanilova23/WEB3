@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<head>
+<title> Сайт Душниловой Дашки </title>
+<link rel="stylesheet" href="test_style.css">
+<script type="text/javascript" src="test.js"></script>
+</head>
+<body bgcolor="#000000";>
+<h1 align="center">Сайт Душниловой Дашки</h1>
+ 	<nav>
+		<ul>
+		<li><a href="file:///C:/Users/Даша/Desktop/Website/ЛР_3/menu/menu.html">Главная</a></li>
+		<li><a href="file:///C:/Users/Даша/Desktop/Website/ЛР_3/about/about.html">Обо мне</a></li>
+		<li><a href="file:///C:/Users/Даша/Desktop/Website/ЛР_3/hobby/hobby.html">Мои интересы</a></li>
+		<li><a href="file:///C:/Users/Даша/Desktop/Website/ЛР_3/studies/studies.html">Учёба</a></li>
+		<li><a href="file:///C:/Users/Даша/Desktop/Website/ЛР_3/pics/pics.html">Фотоальбом</a></li>
+		<li><a href="file:///C:/Users/Даша/Desktop/Website/ЛР_3/contact/contact.html">Контакт</a></li>
+		<li class="on"><a href="file:///C:/Users/Даша/Desktop/Website/ЛР_3/test/test.html">Тест</a></li>
+		<li><a href="file:///C:/Users/Даша/Desktop/Website/ЛР_3/history/history.html">История</a></li>
+		</ul>
+	</nav>
+	<FORM name="quiz" id="quiz" class="quiz_form">
+		<div>
+		<label for="fio">ФИО</label>
+		<input name="ФИО" id="fio">
+		<div class="error_name">Пожалуйста введите ФИО корректно</div>
+		</div>
+		<br>
+		<div class="no_1">
+			<label for="q1">1.Термин "экология" предложил?</label>
+			<br>
+			<INPUT NAME="q1" TYPE= RADIO VALUE="no" id="q1"> Э.Гаккель;<br>
+			<INPUT NAME="q1" TYPE= RADIO VALUE="no" id="q1">В.И.Вернадский;<br>
+			<INPUT NAME="q1" TYPE= RADIO VALUE="yes" id="q1">Ч.Дарвин;<br>
+			<INPUT NAME="q1" TYPE= RADIO VALUE="no" id="q1">А.Тенсли<br>
+			<div class="error_q1">Заполните поле</div>
+		</div>
+		<br>
+		<div class="no_2">
+			<label for="q2">2.Какой уровень организации живой материии является областью познания в экологии?</label>
+			<br>
+			<input name="q2" id="q2" type=number>
+			<div class="error_q2">Заполните поле</div>
+		</div>
+		<br>
+		<div class="no_3">
+			<label for="q3">3.Какие из перечисленных ниже огранизмов являются неклеточными?</label>
+			<br>
+			<INPUT NAME="q3" TYPE= RADIO VALUE="no" id="q3">грибы;<br>
+			<INPUT NAME="q3" TYPE= RADIO VALUE="yes" id="q3">вирусы;<br>
+			<INPUT NAME="q3" TYPE= RADIO VALUE="no" id="q3">животные;<br>
+			<INPUT NAME="q3" TYPE= RADIO VALUE="no" id="q3">растения <br>
+			<div class="error_q3">Заполните поле</div>
+		</div>
+		<br>
+			<div class="no_4">
+			<label for="q4">4.Растения, довольствующиеся малым содержанием зольных элементов в почве, называются?</label>
+			<br>
+			<INPUT NAME="q4" TYPE= RADIO VALUE="no" id="q4">мезотрофами;<br>
+			<INPUT NAME="q4" TYPE= RADIO VALUE="yes" id="q4">эвтрофами;<br>
+			<INPUT NAME="q4" TYPE= RADIO VALUE="no" id="q4">олиготрофами <br>
+			<div class="error_q4">Заполните поле</div>
+		</div>
+		<br>
+			<div class="no_5">
+			<label for="q5">5.На какой высоте располагается озоносфера?</label>
+			<br>
+			<INPUT NAME="q5" TYPE= RADIO VALUE="yes" id="q5">80 км;<br>
+			<INPUT NAME="q5" TYPE= RADIO VALUE="no" id="q5">19-32 км;<br>
+			<INPUT NAME="q5" TYPE= RADIO VALUE="no" id="q5">10 км <br>
+			<INPUT NAME="q5" TYPE= RADIO VALUE="no" id="q5">55 км <br>
+			<div class="error_q5">Заполните поле</div>
+		</div>
+		<br>
+		<button type="reset">Отчистить</button>
+		<button type="button" onclick="validate_form()">Отправить</button>
+	</FORM>
+	<div id="after_sub">
+	<p id = "num_correct">Good job</p>
+	</div>
+
+</body>
