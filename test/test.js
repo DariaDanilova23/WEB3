@@ -2,11 +2,11 @@ localStorage.setItem("Тест","+");
 
 setCookie('sos','Тест_t',12);
 
-function setCookie(name, value, days){
+function setCookie(name_, value_, days){
 	var date = new Date;
 	date.setDate(date.getDate()+days);
 	value=encodeURIComponent(value);
-	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
+	document.cookie=name_+"="+value_+";path=/; expires="+date.toUTCString();
 };
 
 
