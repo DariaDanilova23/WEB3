@@ -1,5 +1,5 @@
 localStorage.setItem("Фотоальбом", "+");
-setCookie('Фотоальбом','Фото',12);
+setCookie('Фотоальбом','',12);
 
 function setCookie(name, value, days){
 	var date = new Date;
