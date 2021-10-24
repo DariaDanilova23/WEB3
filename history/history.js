@@ -10,16 +10,16 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
     storage.append(tr);
 }
 
-let tr2 = document.createElement('tr');
-tr2.innerHTML = getCookie("name");
-cookieStore.append(tr2);
+allCookie();
 
-function getCookie(name){
-	var matches=document.cookie.match(new RegExp("(?:^|;)"+name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g,'\\$1')+ "=([^;]*)"
-	));
-	return matches ? decodeURIComponent(matches[1]):undefined;
-};
-
+function allCookie(){
+	let cookiesArray = document.cookie.split(';');
+	for (let cookie of cookiesArray) {
+		let tr2 = document.createElement('tr');
+		tr2.innerHTML = cookie;
+		cookieStore.append(tr2);
+}
+}
 /*
 setCookie('name','+',12);
 
