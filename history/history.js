@@ -10,14 +10,15 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
     storage.append(tr);
 }
 
-function allCookie(){
-	let cookiesArray = document.cookie.split(';');
-	for (let cookie of cookiesArray) {
-		let tr2 = document.createElement('tr');
-		tr2.innerHTML = cookie;
-		cookieStore.append(tr2);
-}
-}
+let tr2 = document.createElement('tr');
+tr2.innerHTML = getCookie("Тест");
+cookieStore.append(tr2);
+
+function getCookie(name){
+	var matches=document.cookie.match(new RegExp("(?:^|;)"+name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g,'\\$1')+ "=([^;]*)"
+	));
+	return matches ? decodeURIComponent(matches[1]):undefined;
+};
 
 /*
 setCookie('name','+',12);
