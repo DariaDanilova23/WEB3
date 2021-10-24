@@ -1,4 +1,15 @@
  localStorage.setItem("Хобби","+");
+
+setCookie('name','Хобби',12);
+
+function setCookie(name, value_s, days){
+	var date = new Date;
+	var value=value_s;
+	date.setDate(date.getDate()+days);
+	value=encodeURIComponent(value);
+	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
+};
+
  const element=document.getElementsByClassName('menu-item');
  for(i=0;i<element.length;i++){
 	 element[i].addEventListener('click',showMenu);
