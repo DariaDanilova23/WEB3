@@ -1,14 +1,14 @@
 localStorage.setItem("Тест","+");
 
-setCookie('help','Тест_t',12);
+setCookie('sos','Тест_t',12);
 
-function setCookie(name_s, value_s, days){
+function setCookie(name, value, days){
 	var date = new Date;
 	date.setDate(date.getDate()+days);
-	var value=encodeURIComponent(value);
-	var name=encodeURIComponent(name);
-	document.cookie= name+"="+ value+";path=/; expires="+date.toUTCString();
+	value=encodeURIComponent(value);
+	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
 };
+
 
 function validate_form()
 {
