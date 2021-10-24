@@ -10,15 +10,13 @@ tr.innerHTML = ("<tr>"+key+localStorage.getItem(key)+"</tr>");
     storage.append(tr);
 }
 
-allCookie();
 
-function allCookie(){
 	for (let cookie of cookiesArray) {
 		let tr2 = document.createElement('tr');
 		tr2.innerHTML = cookie;
 		cookieStore.append(tr2);
-}
-}
+	}
+
 /*
 setCookie('name','+',12);
 
