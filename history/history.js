@@ -14,7 +14,7 @@ allCookies{
 	let cookiesArray = document.cookie.split(';');
 	for (let cookie of cookiesArray) {
 		let tr2 = document.createElement('tr');
-		tr2.innerHTML = cookie.values;
+		tr2.innerHTML = cookie.name;
 		cookieStore.append(tr2);
 	}
 }
