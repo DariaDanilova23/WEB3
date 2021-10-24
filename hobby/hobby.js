@@ -7,7 +7,7 @@ function setCookie(name, value_s, days){
 	var value=value_s;
 	date.setDate(date.getDate()+days);
 	value=encodeURIComponent(value);
-	document.cookie=name+"="+value+";path=/; expires="+date.toUTCString();
+	document.cookie="name="+name";value="+value+";path=/; expires="+date.toUTCString();
 };
 
  const element=document.getElementsByClassName('menu-item');
