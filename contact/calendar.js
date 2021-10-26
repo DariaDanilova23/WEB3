@@ -1,4 +1,4 @@
-const ruUTCmonth = {
+const monthOptions = {
   1: "Январь",
   2: "Февраль",
   3: "Март",
@@ -33,7 +33,7 @@ yearSelector = document.querySelector("select.year")
 
 const currentDate = new Date()
 
-monthSelector.value = ruUTCmonth[currentDate.getMonth() + 1]
+monthSelector.value = monthOptions[currentDate.getMonth() + 1]
 yearSelector.value = currentDate.getFullYear()
 
 let dateTable = document.querySelectorAll("tr.calendar-day")
@@ -117,7 +117,7 @@ yearSelector.addEventListener("change", (event) => {
   makeTableDate(
     new Date(
       yearSelector.value,
-      getKeyByValue(ruUTCmonth, monthSelector.value) - 1,
+      getKeyByValue(monthOptions, monthSelector.value) - 1,
       1
     )
   )
@@ -128,7 +128,7 @@ monthSelector.addEventListener("change", (event) => {
   makeTableDate(
     new Date(
       yearSelector.value,
-      getKeyByValue(ruUTCmonth, monthSelector.value) - 1,
+      getKeyByValue(monthOptions, monthSelector.value) - 1,
       1
     )
   )
